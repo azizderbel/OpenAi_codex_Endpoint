@@ -1,3 +1,4 @@
 env
 .env
 codex_test.py
+__pycache__

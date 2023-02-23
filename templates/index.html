@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAi codex</title>
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+    <script src="{{url_for('static', filename='js/main.js')}}" defer></script>
+</head>
+<body>
+   <div class="container">
+        <div class="input-zone">
+            <textarea name="input" id="input" cols="30" rows="10"></textarea>
+            <button id="btn">Check</button>
+        </div>
+       <div class="output-zone">
+            <textarea name="output" id="output" cols="60" rows="70"></textarea>
+       </div> 
+   </div>
+   <script src="{{ url_for('static', filename='js/jquery-3.6.3.js') }}"></script>
+</body>
+</html>

@@ -1,7 +1,6 @@
 from dotenv import dotenv_values
 import openai
-from flask import Flask
-from flask import request,abort,render_template
+from flask import Flask,request,abort,render_template
 import codex_completion as codex
 
 secrets = dotenv_values(".env")
